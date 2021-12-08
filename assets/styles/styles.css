@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
 
 .page-header {
   background: #000;
@@ -21,6 +25,44 @@
   display: block;
 }
 
+.top-infocard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0 188px;
+}
+
+.top-infocard-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 766px;
+}
+
+.top-infocard-subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.top-infocard-title {
+  font-weight: 500;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.top-infocard-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.top-infocard-image {
+  margin-top: 66px;
+}
+
 @media screen and (max-width: 400px) {
   .main-banner-desktop {
     display: none;
@@ -29,5 +71,24 @@
 @media screen and (min-width: 401px) {
   .main-banner-mobile {
     display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top-infocard {
+    padding: 70px 26px 80px;
+  }
+  .top-infocard-subtitle {
+    font-size: 20px;
+  }
+  .top-infocard-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .top-infocard-description {
+    text-align: center;
+  }
+  .top-infocard-image {
+    max-width: 240px;
   }
 }
