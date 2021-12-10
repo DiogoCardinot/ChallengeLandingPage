@@ -176,6 +176,29 @@ body {
   padding: 32px 8% 0;
 }
 
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #000000;
+  padding: 38px 0;
+}
+
+.footer-icons {
+  display: flex;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-text {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.footer-icon {
+  margin: 0 8px 0;
+}
+
 @media screen and (max-width: 374px) {
   .middle-banner-image-mobile {
     display: none;
@@ -249,6 +272,13 @@ body {
   }
   .bottom-infocard-description {
     font-size: 16px;
+  }
+  .page-footer {
+    padding: 38px 0 26px;
+  }
+  .footer-text {
+    text-align: center;
+    max-width: 260px;
   }
 }
 
